@@ -42,7 +42,15 @@ function init() {
     let sens_arr = localStorage.getItem("senators"); // grab senators from local storage
     if (sens_arr !== null) {
         sens_arr = JSON.parse(sens_arr);
+
+        let list = document.getElementById("senators-list");
+        list.innerHTML = "";
+        let count = 0;
         for (let i = 0; i < sens_arr.length; i++) {
+            // populate original list using localStorage rather than JSON file if it exists
+            list.innerHTML += `<li draggable="true">${sens_arr[i].full_name}</li>`;
+            count++;
+
             // if a senator has voted, put their name in the correct field
             if (sens_arr[i].voted === true) {
                 let newEl = document.createElement("li");
@@ -55,10 +63,11 @@ function init() {
                 } 
             }
         }
-    }
-
-    // load JSON data from localhost:8080/partyList.json to populate original bulleted list
-    readJson();
+        document.getElementById("msg").innerHTML = `${count} loaded senators`;
+    } else {
+        // load JSON data from localhost:8080/partyList.json to populate original bulleted list
+        readJson();
+    } 
 
     // setup drag events
     src = document.getElementById("senators-list"); // parent of draggable items
