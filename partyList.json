@@ -1,0 +1,63 @@
+{
+  "senators": [
+    {
+      "full_name": "Mark Kelly",
+      "party_affiliation": "Democrat",
+      "voted": false
+    },
+
+    {
+      "full_name": "Michael Bennet",
+      "party_affiliation": "Democrat",
+      "voted": false
+    },
+
+    {
+      "full_name": "Marco Rubio",
+      "party_affiliation": "Republican",
+      "voted": false
+    },
+
+    {
+      "full_name": "Raphael Warnock",
+      "party_affiliation": "Democrat",
+      "voted": false
+    },
+
+    {
+      "full_name": "Roy Blunt",
+      "party_affiliation": "Republican",
+      "voted": false
+    },
+
+    {
+      "full_name": "Richard Burr",
+      "party_affiliation": "Republican",
+      "voted": false
+    },
+
+    {
+      "full_name": "Maggie Hassan",
+      "party_affiliation": "Democrat",
+      "voted": false
+    },
+
+    {
+      "full_name": "Catherine Masto",
+      "party_affiliation": "Democrat",
+      "voted": false
+    },
+
+    {
+      "full_name": "Rob Portman",
+      "party_affiliation": "Republican",
+      "voted": false
+    },
+
+    {
+      "full_name": "Patrick Toomey",
+      "party_affiliation": "Republican",
+      "voted": false
+    }
+  ]
+}

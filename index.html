@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: lightgray;
+      }
+      #container {
+        display: flex;
+        flex-direction: row;
+      }
+      fieldset {
+        width: 200px;
+        height: 200px;
+      }
+      .dragged {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Homework 4 Problem 1</h1>
+    <h2>Time to Vote</h2>
+    <p>Drag members to either the Democrats or Republicans list.</p>
+    <ul id="senators-list"></ul>
+
+    <div id="container">
+      <fieldset id="dem">
+        <legend>Democrats:</legend>
+        <ul id="dem-list"></ul>
+      </fieldset>
+
+      <fieldset id="rep">
+        <legend>Republicans:</legend>
+        <ul id="rep-list"></ul>
+      </fieldset>
+    </div>
+
+    <p id="msg">Click and drag the senators into the appropriate box.</p>
+
+    <script type="text/javascript" src="partyList.json"></script>
+    <script type="text/javascript" src="partyWise.js"></script>
+  </body>
+</html>
